@@ -12,6 +12,7 @@ jobs:
         uses: peter-evans/s3-backup@v1
         env:
           ACCESS_KEY_ID: AKIAXECJTNR7JKJJ4YPJ
+          MIRROR_TARGET: test-bucket-omni
           SECRET_ACCESS_KEY: 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
         with:
           args: --overwrite --remove
